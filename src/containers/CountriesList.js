@@ -23,11 +23,11 @@ const CountriesList = () => {
 
   return (
     <ul>
-      {data.map(country => (
+      {/* {data.map(country => (
         <li key={country.name}>
           <CountryCard country={country} />
         </li>
-      ))}
+      ))} */}
     </ul>
   )
 }
