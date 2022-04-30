@@ -1,8 +1,10 @@
 import React from 'react'
 
 
-const CountryCard = ({ country }) => {
-  const { name, flag, population, region, capital } = country
+const CountryCard = ({ resource }) => {
+  console.log(resource)
+  const { name, flag, population, region, capital } = resource
+  console.log(resource)
   return (
     <div className="country-card">
       <div className="image-wrapper">
