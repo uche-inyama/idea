@@ -28,7 +28,7 @@ const FilterForm = () => {
             <option key={region} value={region}>{region}</option>
           ))}
         </select>
-        <input type="submit"/>
+        <input type="submit" value="filter"/>
       </form>
     </div>
   )
