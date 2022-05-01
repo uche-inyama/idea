@@ -6,7 +6,7 @@
   --clr-very-dark-blue-dark-mode: 207 26% 17%;
   --clr-very-dark-blue-light-mode: 200 15% 8%;
   --clr-dark-gray-light-mode: 0 0% 52%;
-  --clr-very-light-gray-light-mode: 0 0% 98%;
+  --clr-very-light-gray-light-mode: 0 0% 97%;
   --clr-light-gray-light-mode: 0 0% 27%;
   --clr-white: 0 0% 100;
 
@@ -16,54 +16,15 @@
 
   /* font-families */
   --ff-sans: "sans", serif;
-  --ff-nunito: "nunito", serif;
+  --ff-nunito-sans: 'Nunito Sans', sans-serif;
+
+  font-family: 'Nunito Sans', sans-serif;
 
   --fw-800: 800;
   --fw-600: 600;
   --fw-300: 300;
 }
 
-/* reset */
-
-*
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-figure,
-picture {
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-  font-weight: 400;
-}
-
-img,
-picture {
-  width: 100%;
-  display: block;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
 
 /* utility classes */
 
@@ -84,7 +45,7 @@ select {
 
 .uppercase { text-transform: uppercase; }
 
-.ff-nunito { font-family: var(--ff-nunito);}
+.ff-nunito-sans { font-family: var(--ff-nunito-sans);}
 .ff-sans { font-family: var(--ff-sans);}
 
 .fs-homepage-items { font-size: var(--fs-homepage-items);}
@@ -112,8 +73,35 @@ select {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.description > h2 {
+.description, .detail-description > h2 {
   padding: 20px 0;
+}
+
+.detail-description h5 {
+  line-height: 2.5;
+}
+
+.d-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.language, .border-country {
+  display: inline-block;
+}
+
+.border-country {
+  background: #fff;
+  color: #000;
+}
+
+.back-button {
+  padding: 50px 0;
 }
 
 .country-card {

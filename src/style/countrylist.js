@@ -7,7 +7,6 @@ const StyledCountryList = styled.div`
     margin: 0 20px;
 
     li {
-      box-shadow:  5px 100px 80px rgba(0, 0, 0, 0.12);
       padding: 20px 0;
       margin-bottom: 20px;
     }
@@ -22,8 +21,6 @@ const StyledCountryList = styled.div`
       height: 177px;
     }
   }
-
-
 `
 
 export default StyledCountryList;
