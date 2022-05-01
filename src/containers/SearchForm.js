@@ -11,8 +11,10 @@ const SearchForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    const input = document.querySelector('#search')
     dispatch(fetchCountry(country))
     navigate(`/${country}/details`)
+    input.value = ''
   }
 
   const handleChange = ({target: { value }}) => {
@@ -23,7 +25,7 @@ const SearchForm = () => {
     <StyledSearchForm>
       <div>
         <form onSubmit={handleSubmit}>
-          <input className="text" type="text" value={country} onChange={handleChange} />
+          <input id="search" className="text" type="text" value={country} onChange={handleChange} />
           <input type="submit" value="search"/>
         </form>
       </div>

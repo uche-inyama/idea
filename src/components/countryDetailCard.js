@@ -3,7 +3,6 @@ import StyledCard from '../style/countryCard';
 
 const CountryDetailCard = ({ resource }) => {
   const {borders, languages, nativeName, currencies, subregion, topLevelDomain, name, flag, population, region, capital } = resource
-
   const currency = currencies[0]['name']
 
   return (

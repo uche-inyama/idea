@@ -1,13 +1,22 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { useNavigate, useParams } from 'react-router-dom';
 import CountryDetailCard from '../components/countryDetailCard';
 import StyledContryDetail from '../style/countryDetail'
+import { fetchCountry } from '../redux/searchFormSlice';
+
 
 const CountryDetail = () => {
   const country = useSelector(state => state.country)
   const {status, data, error } = country
   let navigate = useNavigate()
+  const dispatch = useDispatch()
+  const { slug } = useParams()
+
+  
+  useEffect(() => {
+    if (!country.data.length) dispatch(fetchCountry(slug));
+  }, [dispatch, slug])
 
   const handleSubmit = (e) => {
     e.preventDefault()

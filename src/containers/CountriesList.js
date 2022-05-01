@@ -14,7 +14,7 @@ const CountriesList = () => {
   const { status, error, data } = countries
   
   useEffect(() => {
-    dispatch(fetchCountries())
+    if (!countries.length) dispatch(fetchCountries());
   }, [dispatch, fetchCountries])
 
   if(status === 'loading' || status === 'idle'){
