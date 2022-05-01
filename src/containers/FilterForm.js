@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchRegion } from '../redux/filterFormSlice';
 import { regions } from '../regions';
+import StyledFilterForm from '../style/filterForm';
 
 const FilterForm = () => {
   const [region, setRegion] = useState('')
@@ -21,16 +22,18 @@ const FilterForm = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <select onChange={handleChange}>
-          {regions.map(region => (
-            <option key={region} value={region}>{region}</option>
-          ))}
-        </select>
-        <input type="submit" value="filter"/>
-      </form>
-    </div>
+    <StyledFilterForm>
+      <div>
+          <form onSubmit={handleSubmit}>
+            <select onChange={handleChange}>
+              {regions.map(region => (
+                <option key={region} value={region}>{region}</option>
+              ))}
+            </select>
+            <input type="submit" value="filter"/>
+        </form>
+      </div>
+    </StyledFilterForm>
   )
 }
 

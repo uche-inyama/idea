@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from "react-router-dom"
 import { fetchCountry } from '../redux/searchFormSlice';
+import StyledSearchForm from '../style/searchForm'; 
 
 const SearchForm = () => {
   const [country, setCountry] = useState('')
@@ -19,12 +20,14 @@ const SearchForm = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={country} onChange={handleChange} />
-        <input type="submit" value="search"/>
-      </form>
-    </div>
+    <StyledSearchForm>
+      <div>
+        <form onSubmit={handleSubmit}>
+          <input type="text" value={country} onChange={handleChange} />
+          <input type="submit" value="search"/>
+        </form>
+      </div>
+    </StyledSearchForm>
   )
 }
 

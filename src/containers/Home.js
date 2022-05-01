@@ -7,8 +7,10 @@ import CountriesList from './CountriesList'
 const Home = () => {
   return (
     <div>
-      <FilterForm />
-      <SearchForm />
+      <div className="search-filter-wrapper">
+        <SearchForm />
+        <FilterForm />
+      </div>
       <CountriesList />
     </div>
   )

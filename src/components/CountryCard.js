@@ -1,22 +1,22 @@
 import React from 'react'
-
+import StyledCard from '../style/countryCard'
 
 const CountryCard = ({ resource }) => {
-  console.log(resource)
   const { name, flag, population, region, capital } = resource
-  console.log(resource)
   return (
-    <div className="country-card">
-      <div className="image-wrapper">
-        <img src={flag} alt="country_flag" />
+    <StyledCard >
+      <div className="country-card">
+        <div className="image-wrapper">
+          <img src={flag} alt="country_flag" />
+        </div>
+        <div className="description bg-white">
+          <h2 className="fs-homepage-items ff-sans fw-800">{name}</h2>
+          <h5 className="ff-sans"><span className="fs-homepage-items text-lm-light-gray ff-sans fw-600">Population: </span>{population}</h5>
+          <h5 className="ff-sans"><span className="fs-homepage-items text-lm-light-gray ff-sans fw-600">Region: </span>{region}</h5>
+          <h5 className="ff-sans"><span className="fs-homepage-items text-lm-light-gray ff-sans fw-600">Capital: </span>{capital}</h5>
+        </div>
       </div>
-      <div className="description">
-        <h2>{name}</h2>
-        <h5><span>Population of country: </span>{population}</h5>
-        <h5><span>Region of Country: </span>{region}</h5>
-        <h5><span>Capital of Country: </span>{capital}</h5>
-      </div>
-    </div>
+    </StyledCard>  
   )
 }
 

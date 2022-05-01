@@ -5,7 +5,7 @@ import Home from './containers/Home';
 
 const App = () => {
   return (
-    <div className="container">
+    <div className="container bg-lm-light-gray">
       <Router>
         <Routes>
           <Route exact path="/" element={<Home/>} />
