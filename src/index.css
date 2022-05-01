@@ -52,7 +52,7 @@ table {
 .home {
   position: relative;
   top: 75px;
-  z-index: 2;
+  /* z-index: 2; */
 }
 .header {
   display: flex;
@@ -69,4 +69,5 @@ table {
   position: fixed;
   padding: 40px 20px;
   width: 100%;
+  z-index: 10; 
 }

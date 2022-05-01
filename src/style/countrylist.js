@@ -9,6 +9,13 @@ const StyledCountryList = styled.ul`
   li {
     list-style: none;
   }
+
+  @media(min-width: 900px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding-left: 0px;
+  }
 `
 
 export default StyledCountryList;
