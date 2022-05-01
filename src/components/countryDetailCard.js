@@ -12,19 +12,24 @@ const CountryDetailCard = ({ resource }) => {
           <img src={flag} alt="country_flag" />
         </div>
         <div className="detail-description">
-          <h2>{name}</h2>
-          <h5><span>Native Name: </span>{nativeName}</h5>
-          <h5><span>Population: </span>{population}</h5>
-          <h5><span>Region: </span>{region}</h5>
-          <h5><span>Sub region: </span>{subregion}</h5>
-          <div className="level-2">
-            <h5><span>Top Level Domain: </span>{topLevelDomain}</h5>
-            <h5><span>Top Level Domain: </span>{currency}</h5>
-            <h5><span>languages: <span> {
-              languages.map(language => <span key={language}>
-              {language.name}
-              </span>
-              )}</span></span></h5>
+          <div className="d-grid">
+            <div>
+              <h2>{name}</h2>
+              <h5><span>Native Name: </span>{nativeName}</h5>
+              <h5><span>Population: </span>{population}</h5>
+              <h5><span>Region: </span>{region}</h5>
+              <h5><span>Sub region: </span>{subregion}</h5>
+              <h5><span>Capital: </span>{capital}</h5>
+            </div>
+            <div className="level-2">
+              <h5><span>Top Level Domain: </span>{topLevelDomain}</h5>
+              <h5><span>Currency: </span>{currency}</h5>
+              <h5><span>languages: <span> {
+                languages.map(language => <span key={language}>
+                {language.name}
+                </span>
+                )}</span></span></h5>
+            </div>
           </div>
           <h5 className="border-country"><span>Border Countries: <div className="d-flex">{
             borders.map(country => <div key={country} className="item"> {country}</div>)} </div></span></h5>

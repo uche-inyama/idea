@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 
 const StyledContryDetail = styled.div`
-  height: 120vh;
   position: relative;
   top: 100px;
   form {
@@ -30,6 +29,21 @@ const StyledContryDetail = styled.div`
   }
   .border-country {
     padding-top: 20px;
+  }
+
+  @media(min-width: 900px) {
+    .country-card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 100px;
+
+      .d-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+      }
+    }
+ 
   }
 `
 
