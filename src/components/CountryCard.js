@@ -10,10 +10,10 @@ const CountryCard = ({ resource }) => {
           <img src={flag} alt="country_flag" />
         </div>
         <div className="description">
-          <h2 className="">{name}</h2>
-          <h5 className=""><span className="">Population: </span>{population}</h5>
-          <h5 className=""><span className="">Region: </span>{region}</h5>
-          <h5 className=""><span className="">Capital: </span>{capital}</h5>
+          <h2>{name}</h2>
+          <h5><span>Population: </span>{population}</h5>
+          <h5><span>Region: </span>{region}</h5>
+          <h5><span>Capital: </span>{capital}</h5>
         </div>
       </div>
     </StyledCard>  

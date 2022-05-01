@@ -52,7 +52,6 @@ table {
 .home {
   position: relative;
   top: 75px;
-  /* z-index: 2; */
 }
 .header {
   display: flex;
@@ -70,4 +69,8 @@ table {
   padding: 40px 20px;
   width: 100%;
   z-index: 10; 
+}
+
+.detail-description {
+  font-family: 'Nunito Sans', sans-serif;
 }

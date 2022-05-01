@@ -2,9 +2,35 @@ import styled from 'styled-components'
 
 
 const StyledContryDetail = styled.div`
+  height: 120vh;
   position: relative;
   top: 100px;
   form {
-    padding: 30px 20px 0 20px;
+    padding: 0px 20px 0px 20px;
+  }
+  .detail-description{
+    padding: 20px 0 60px 0px;
+    line-height: 2;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    span {
+      font-weight: 600;
+      font-size: 1rem;
+      color: hsl(200, 15%, 8%);
+    }
+  }
+  .d-flex {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .level-2 {
+    padding: 20px 0;
+  }
+  .border-country {
+    padding-top: 20px;
   }
 `
+
+export default StyledContryDetail;

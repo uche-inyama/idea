@@ -28,6 +28,11 @@ const StyledCard = styled.div`
     color: #000;
     font-size: 1.2rem;
   }
+  .item {
+    width: 100px;
+    text-align: center;
+    background-color: #fff;
+  }
 }
 `
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import CountryDetailCard from '../components/countryDetailCard';
+import StyledContryDetail from '../style/countryDetail'
 
 const CountryDetail = () => {
   const country = useSelector(state => state.country)
@@ -21,12 +22,12 @@ const CountryDetail = () => {
   }
 
   return (
-    <div>
-      <form class="back-button" onSubmit={handleSubmit}>
+    <StyledContryDetail>
+      <form className="back-button" onSubmit={handleSubmit}>
         <input type="submit" value="Back"/>
       </form>
       <CountryDetailCard resource={data[0]}/>
-    </div>
+    </StyledContryDetail>
   )
 }
 
