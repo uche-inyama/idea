@@ -6,7 +6,7 @@ import CountriesList from './CountriesList'
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <div className="search-filter-wrapper">
         <SearchForm />
         <FilterForm />

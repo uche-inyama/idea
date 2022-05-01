@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 const StyledSearchForm = styled.div`
-  padding: 0 0 2rem 0;
+  padding: 20px 0;
   input {
-    height: 1.5rem;
+    height: 30px;
   }
 `;
 

@@ -9,11 +9,11 @@ const CountryCard = ({ resource }) => {
         <div className="image-wrapper">
           <img src={flag} alt="country_flag" />
         </div>
-        <div className="description bg-white">
-          <h2 className="fs-homepage-items --ff-nunito-sans fw-800">{name}</h2>
-          <h5 className="--ff-nunito-sans"><span className="fs-homepage-items text-lm-light-gray --ff-nunito-sans fw-600">Population: </span>{population}</h5>
-          <h5 className="--ff-nunito-sans"><span className="fs-homepage-items text-lm-light-gray --ff-nunito-sans fw-600">Region: </span>{region}</h5>
-          <h5 className="--ff-nunito-sans"><span className="fs-homepage-items text-lm-light-gray --ff-nunito-sans fw-600">Capital: </span>{capital}</h5>
+        <div className="description">
+          <h2 className="">{name}</h2>
+          <h5 className=""><span className="">Population: </span>{population}</h5>
+          <h5 className=""><span className="">Region: </span>{region}</h5>
+          <h5 className=""><span className="">Capital: </span>{capital}</h5>
         </div>
       </div>
     </StyledCard>  

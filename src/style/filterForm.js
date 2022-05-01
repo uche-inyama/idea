@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 
 const StyledFilterForm = styled.div`
-  display: flex;
-  justify-content: start;
+  padding-top: 20px;
+  input, select {
+    height: 30px;
+  }
 `
 export default StyledFilterForm;
