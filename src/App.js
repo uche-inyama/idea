@@ -18,6 +18,7 @@ const App = () => {
       element1.style.color = 'hsl(0, 0%, 100%)';
       element3.style.backgroundColor = ' hsl(207, 26%, 17%)'
       element3.style.color = 'hsl(0, 0%, 100%)';
+      if(!element4) return;
       element4.style.backgroundColor = 'hsl(207, 26%, 17%)';
       element4.style.color = 'hsl(0, 0%, 100%)';
       for(let ele of element2){
@@ -29,6 +30,7 @@ const App = () => {
       element1.style.color = 'hsl(209, 23%, 22%)';
       element3.style.backgroundColor = 'hsl(0, 0%, 98%)'
       element3.style.color = 'hsl(209, 23%, 22%)';
+      if(!element4) return;
       element4.style.backgroundColor = 'hsl(0, 0%, 98%)';
       element4.style.color = 'hsl(209, 23%, 22%)';
       for(let ele2 of element2){
@@ -51,18 +53,20 @@ const App = () => {
     }
   } 
   return (
-    <div className="container bg-lm-light-gray">
+    <>
       <div className="header">
         <div>Where in the world</div>
         <div onClick={handleChange}>moon</div>
       </div>
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Home/>} />
-          <Route exact path="/:slug/details" element={<CountryDetail />}/>
-        </Routes>
-      </Router>
-    </div>
+      <div className="container bg-lm-light-gray">
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<Home/>} />
+            <Route exact path="/:slug/details" element={<CountryDetail />}/>
+          </Routes>
+        </Router>
+      </div>
+    </>
   );
 }
 

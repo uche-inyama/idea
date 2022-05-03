@@ -13,7 +13,6 @@ const CountryDetail = () => {
   const dispatch = useDispatch()
   const { slug } = useParams()
 
-  
   useEffect(() => {
     if (!country.data.length) dispatch(fetchCountry(slug));
   }, [dispatch, slug])

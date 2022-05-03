@@ -2,10 +2,12 @@ import styled from 'styled-components'
 
 
 const StyledContryDetail = styled.div`
-  position: relative;
-  top: 100px;
+  height: 100vh;
   form {
-    padding: 0px 20px 0px 20px;
+    padding: 20px 0px;
+    width: 6%;
+    display: flex;
+    justify-content: flex-end;
   }
   .detail-description{
     padding: 20px 0 60px 0px;
@@ -35,7 +37,7 @@ const StyledContryDetail = styled.div`
     .country-card {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 100px;
+      grid-gap: 50px;
 
       .d-grid {
         display: grid;
@@ -43,7 +45,13 @@ const StyledContryDetail = styled.div`
         grid-gap: 30px;
       }
     }
- 
+    .image-wrapper{
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20px;
+    }
   }
 `
 

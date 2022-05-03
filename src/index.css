@@ -50,14 +50,19 @@ body {
   height: 100vh;
 }
 
+#root {
+  height: 100%;
+}
+
+
 .container {
-  height: 100vh;
   background-color: hsl(0, 0%, 98%);
-}
-.home {
+  width: 100%;
+  margin: 0 auto;
   position: relative;
-  top: 75px;
+  top: 74px;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -65,7 +70,7 @@ body {
   background-color: #fff;
   position: fixed;
   width: 100%;
-  z-index: 10; 
+  z-index: 2; 
 }
 
 .search-filter-wrapper {
@@ -73,9 +78,9 @@ body {
   position: fixed;
   padding: 40px 20px;
   width: 100%;
-  z-index: 10; 
+  z-index: 2; 
 }
 
 .detail-description {
   font-family: 'Nunito Sans', sans-serif;
-}
+} 

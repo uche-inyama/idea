@@ -10,11 +10,8 @@ const FilterForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if(region === 'select a region'){
-      return
-    }else{
-      dispatch(fetchRegion(region))
-    }
+    if(region === 'select a region')return
+    dispatch(fetchRegion(region))
   }
 
   const handleChange = ({target: { value }}) => {
