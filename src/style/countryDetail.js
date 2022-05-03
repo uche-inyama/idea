@@ -2,12 +2,23 @@ import styled from 'styled-components'
 
 
 const StyledContryDetail = styled.div`
-  height: 100vh;
-  form {
-    padding: 20px 0px;
-    width: 6%;
-    display: flex;
-    justify-content: flex-end;
+  width: 95%;
+  margin: 0 auto;
+  .back-button {
+  }
+    i {
+      padding: 15px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+
+  .image-wrapper {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
   }
   .detail-description{
     padding: 20px 0 60px 0px;
@@ -21,9 +32,7 @@ const StyledContryDetail = styled.div`
     }
   }
   .d-flex {
-    padding: 10px 0;
     display: flex;
-    justify-content: space-between;
     text-align: center;
   }
   .level-2 {
@@ -45,12 +54,18 @@ const StyledContryDetail = styled.div`
         grid-gap: 30px;
       }
     }
+    .country-card.detail {
+      box-shadow: 0; 
+    }
     .image-wrapper{
       height: 300px;
       display: flex;
       align-items: center;
       justify-content: center;
       padding-top: 20px;
+    }
+    .image-wrapper.detail {
+      height: 300px;
     }
   }
 `

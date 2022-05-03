@@ -6,9 +6,9 @@ const CountryDetailCard = ({ resource }) => {
   const currency = currencies[0]['name']
 
   return (
-    <StyledCard>
-      <div className="country-card">
-        <div className="image-wrapper">
+    <>
+      <div className="detail-card">
+        <div className="detail-image-wrapper">
           <img src={flag} alt="country_flag" />
         </div>
         <div className="detail-description">
@@ -35,7 +35,7 @@ const CountryDetailCard = ({ resource }) => {
             borders.map(country => <div key={country} className="item"> {country}</div>)} </div></span></h5>
         </div>
       </div>
-    </StyledCard>  
+    </>  
   )
 }
 export default CountryDetailCard;

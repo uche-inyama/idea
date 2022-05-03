@@ -31,9 +31,11 @@ const CountryDetail = () => {
 
   return (
     <StyledContryDetail>
-      <form className="back-button" onSubmit={handleSubmit}>
-        <input type="submit" value="Back"/>
-      </form>
+      <>
+        <div className="back-button" onClick={handleSubmit}>
+          <i className="fa-solid fa-arrow-left-long"></i>
+        </div>
+      </>
       <CountryDetailCard resource={data[0]}/>
     </StyledContryDetail>
   )

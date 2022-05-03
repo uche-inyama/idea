@@ -8,8 +8,6 @@ const StyledCard = styled.div`
   img {
     height: 100%;
     width: 100%;
-    // border-top-right-radius: 7px;
-    // border-top-left-radius: 7px;
   }
 
   .description {
@@ -32,7 +30,7 @@ const StyledCard = styled.div`
     font-size: 1.0rem;
   }
   .item {
-    width: 100px;
+    width: 50px;
     text-align: center;
     background-color: #fff;
   }
@@ -46,7 +44,9 @@ const StyledCard = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 20px;
   }
+ 
   .description {
     height: 200px;
   }

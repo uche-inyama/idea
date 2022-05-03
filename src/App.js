@@ -56,7 +56,9 @@ const App = () => {
     <>
       <div className="header">
         <div>Where in the world</div>
-        <div onClick={handleChange}>moon</div>
+        <div onClick={handleChange}>
+          <i className="fa-solid fa-moon"></i>
+        </div>
       </div>
       <div className="container bg-lm-light-gray">
         <Router>
