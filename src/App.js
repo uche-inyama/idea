@@ -55,7 +55,7 @@ const App = () => {
   return (
     <>
       <div className="header">
-        <div>Where in the world</div>
+        <div className="header-title">Where in the world</div>
         <div onClick={handleChange}>
           <i className="fa-solid fa-moon"></i>
         </div>

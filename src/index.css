@@ -47,8 +47,8 @@ table {
 }
 
 body {
-  background-color: red;
-  /* background-color: hsl(0, 0%, 100%); */
+  /* background-color: red; */
+  background-color: hsl(0, 0%, 100%);
   font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -60,26 +60,38 @@ body {
   /* background-color: hsl(0, 0%, 98%); */
   width: 100%;
   margin: 0 auto;
-  /* position: relative; */
-  /* top: 74px; */
+  position: relative;
+  top: 80px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   padding: 30px 10px;
-  /* background-color: #fff; */
-  /* position: fixed; */
+  background-color: #fff;
+  position: fixed;
   width: 100%;
-  /* z-index: 2;  */
+  z-index: 2; 
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  padding-left: 10px;
+}
+
+.fa-moon {
+  font-size: 1.4rem;
+  padding: 10px;
 }
 
 .search-filter-wrapper {
-  /* background-color: hsl(0, 0%, 98%); */
-  /* position: fixed; */
+  background-color: hsl(0, 0%, 98%);
+  position: fixed;
   padding: 40px 20px;
   width: 100%;
-  /* z-index: 2;  */
+  z-index: 2; 
 }
 
 @media(min-width: 900px) {
