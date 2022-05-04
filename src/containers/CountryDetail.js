@@ -14,6 +14,8 @@ const CountryDetail = () => {
   const { slug } = useParams()
 
   useEffect(() => {
+    // const container = document.querySelector('.container')
+    // container.style.backgroundColor = '#fff';
     if (!country.data.length) dispatch(fetchCountry(slug));
   }, [dispatch, slug])
 
@@ -31,12 +33,7 @@ const CountryDetail = () => {
 
   return (
     <StyledContryDetail>
-      <>
-        <div className="back-button" onClick={handleSubmit}>
-          <i className="fa-solid fa-arrow-left-long"></i>
-        </div>
-      </>
-      <CountryDetailCard resource={data[0]}/>
+        <CountryDetailCard handleSubmit={handleSubmit} resource={data[0]}/>
     </StyledContryDetail>
   )
 }

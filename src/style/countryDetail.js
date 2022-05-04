@@ -1,15 +1,26 @@
 import styled from 'styled-components'
 
-
 const StyledContryDetail = styled.div`
   width: 95%;
+  height: 80vh;
   margin: 0 auto;
-  .back-button {
+  .country-detail-wrapper {
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-gap: 30px;
   }
     i {
-      padding: 15px 20px;
+      display: block;
+      width: 127px;
+      padding: 10px 20px;
       text-align: center;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      span {
+        padding: 0 10px;
+        font-size: 0.7em;
+      } 
     }
   }
 
@@ -30,10 +41,26 @@ const StyledContryDetail = styled.div`
       font-size: 1rem;
       color: hsl(200, 15%, 8%);
     }
+    .language-list {
+      font-weight: 400;
+      color: #fff;
+    }
+    .country-name {
+      font-weight: 800;
+      font-size: 1.2rem;
+    }
   }
+
   .d-flex {
     display: flex;
     text-align: center;
+
+    .item {
+      margin-right: 5px;
+      padding: 0 15px;
+      border: solid 1px hsl(0, 0%, 80%);
+      border-radius: 5%;
+    }
   }
   .level-2 {
     padding: 20px 0;
@@ -41,9 +68,9 @@ const StyledContryDetail = styled.div`
   .border-country {
     padding-top: 20px;
   }
-
+ 
   @media(min-width: 900px) {
-    .country-card {
+    .country-detail-card {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 50px;

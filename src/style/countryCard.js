@@ -15,7 +15,7 @@ const StyledCard = styled.div`
   //   width: 100%;
     padding: 20px 0 60px 20px;
     line-height: 2;
-    background-color: hsl(0, 0%, 100%);
+    // background-color: hsl(0, 0%, 100%);
     border-bottom-right-radius: 7px;
     border-bottom-left-radius: 7px;
     span {
@@ -35,6 +35,7 @@ const StyledCard = styled.div`
     background-color: #fff;
   }
 }
+
 @media(min-width: 900px) {
   width: 100%;
   border-radius: 5px;

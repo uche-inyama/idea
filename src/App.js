@@ -7,7 +7,7 @@ const App = () => {
   const [mode, setMode] = useState('dark')
 
   const changeMode = (mode) => {
-    const element1 = document.querySelector('.container')
+    const element1 = document.querySelector('body')
     const element2 = document.querySelectorAll('.description')
     const element3 = document.querySelector('.header')
     const element4 = document.querySelector('.search-filter-wrapper')
