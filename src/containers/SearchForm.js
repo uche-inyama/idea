@@ -25,8 +25,10 @@ const SearchForm = () => {
     <StyledSearchForm>
       <div>
         <form onSubmit={handleSubmit}>
-          <input id="search" className="text" type="text" value={country} onChange={handleChange} />
-          <input type="submit" value="search"/>
+          <div>
+            <i className="fa-solid fa-magnifying-glass"></i>
+            <input id="search" className="text" type="text" value={country} onChange={handleChange} />
+          </div>
         </form>
       </div>
     </StyledSearchForm>
