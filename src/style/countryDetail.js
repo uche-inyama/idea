@@ -12,6 +12,7 @@ const StyledContryDetail = styled.div`
     grid-gap: 30px;
   }
     i {
+      cursor: pointer;
       display: block;
       width: 127px;
       padding: 10px 20px;
@@ -30,6 +31,7 @@ const StyledContryDetail = styled.div`
 
   img {
     width: 100%;
+    height: 100%;
   }
   .detail-description{
     padding: 20px 0 60px 0px;

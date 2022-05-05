@@ -7,16 +7,14 @@ import { fetchCountry } from '../redux/searchFormSlice';
 
 
 const CountryDetail = () => {
-  const country = useSelector(state => state.country)
+  const country = useSelector(state => (state.country))
   const {status, data, error } = country
   let navigate = useNavigate()
   const dispatch = useDispatch()
   const { slug } = useParams()
 
   useEffect(() => {
-    // const container = document.querySelector('.container')
-    // container.style.backgroundColor = '#fff';
-    if (!country.data.length) dispatch(fetchCountry(slug));
+    dispatch(fetchCountry(slug));
   }, [dispatch, slug])
 
   const handleSubmit = (e) => {
@@ -31,9 +29,15 @@ const CountryDetail = () => {
     )
   }
 
+  if(error){
+    return (
+      <div>{error}</div>
+    )
+  }
+
   return (
     <StyledContryDetail>
-        <CountryDetailCard handleSubmit={handleSubmit} resource={data[0]}/>
+        <CountryDetailCard handleSubmit={handleSubmit} error resource={data[0]}/>
     </StyledContryDetail>
   )
 }

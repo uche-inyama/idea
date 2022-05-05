@@ -2,8 +2,10 @@ import React from 'react'
 import StyledCard from '../style/countryCard';
 
 const CountryDetailCard = ({ resource, handleSubmit }) => {
-  const {borders, languages, nativeName, currencies, subregion, topLevelDomain, name, flag, population, region, capital } = resource
+  const { borders, languages, nativeName, currencies, subregion, topLevelDomain, name, flag, population, region, capital } = resource
   const currency = currencies[0]['name']
+
+  const border = borders ? borders : []
 
   return (
     <div className="country-detail-wrapper">
@@ -33,7 +35,7 @@ const CountryDetailCard = ({ resource, handleSubmit }) => {
             </div>
           </div>
           <h5 className="border-country"><span>Border Countries: </span> <div className="d-flex">{
-            borders.map(country => <div key={country} className="item"> {country}</div>)} </div></h5>
+            border.map(country => <div key={country} className="item"> {country}</div>)} </div></h5>
         </div>
       </div>
     </div>  

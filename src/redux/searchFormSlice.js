@@ -4,9 +4,12 @@ import axios from "axios";
 export const fetchCountry = createAsyncThunk('countries/getCountry', async (country) => {
   try {
     const response = await axios.get(`https://restcountries.com/v2/name/${country}?fullText=true`)
+    if(!response.statusText) {
+     throw Error ('Could fetch the data for that resource.')
+    }
     return response.data
   } catch (error) {
-    console.log(error)
+    return error.message
   }
 })
 
