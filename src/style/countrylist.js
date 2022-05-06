@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 const StyledCountryList = styled.ul`
+  margin: 0 auto;
+  width: 75%;
   padding: 0;
   position: relative;
-  top: 200px;
+  top: 250px;
   display: grid;
   li {
     list-style: none;
+    margin-bottom: 40px;
   }
 
   @media(min-width: 900px) {

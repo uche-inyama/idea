@@ -1,16 +1,19 @@
 import styled from 'styled-components'
 
 const StyledSearchForm = styled.div`
+  width: 90%;
+  margin: 0 auto;
   padding: 20px 0;
   input {
-    height: 30px;
+    width: 45%;
+    height: 36px;
     position: relative;
   }
   .fa-magnifying-glass {
     position: absolute;
-    left: 180px;
+    padding: 0 10px;
     z-index: 1;
-    top: 67px;
+    top: 71px;
   }
 `;
 

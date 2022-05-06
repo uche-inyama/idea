@@ -3,7 +3,6 @@ import FilterForm from './FilterForm'
 import SearchForm from './SearchForm'
 import CountriesList from './CountriesList'
 
-
 const Home = () => {
   return (
     <div className="home">

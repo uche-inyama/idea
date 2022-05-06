@@ -4,7 +4,7 @@ import CountryDetail from './containers/CountryDetail';
 import Home from './containers/Home';
 
 const App = () => {
-  const [mode, setMode] = useState('dark')
+  const [mode, setMode] = useState('Dark Mode')
 
   const changeMode = (mode) => {
     const element1 = document.querySelector('body')
@@ -13,7 +13,7 @@ const App = () => {
     const element4 = document.querySelector('.search-filter-wrapper')
 
     console.log(element2)
-    if(mode === 'dark'){
+    if(mode === 'Dark Mode'){
       element1.style.backgroundColor = 'hsl(207, 26%, 17%)'
       element1.style.color = 'hsl(0, 0%, 100%)';
       element3.style.backgroundColor = ' hsl(207, 26%, 17%)'
@@ -44,11 +44,11 @@ const App = () => {
   const handleChange = (e) => {
     console.log(`hey:${mode}`)
   
-    if(mode === 'light'){
+    if(mode === 'Light Mode'){
       changeMode(mode)
-      setMode('dark')
+      setMode('Dark Mode')
     }else{
-      setMode('light')
+      setMode('Light Mode')
       changeMode(mode)
     }
   } 
@@ -58,6 +58,7 @@ const App = () => {
         <div className="header-title">Where in the world</div>
         <div onClick={handleChange}>
           <i className="fa-solid fa-moon"></i>
+          <span className="mode">{mode}</span>
         </div>
       </div>
       <div className="container bg-lm-light-gray">

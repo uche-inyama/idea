@@ -67,23 +67,28 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 30px 10px;
+  align-items: center;
+  height: 12%;
   background-color: #fff;
+  font-size: 1rem;
   position: fixed;
   width: 100%;
   z-index: 2; 
 }
 
+.mode {
+  padding-right: 10px;
+}
+
 .header-title {
   display: flex;
   align-items: center;
-  font-size: 1.3rem;
   padding-left: 10px;
 }
 
 .fa-moon {
-  font-size: 1.4rem;
   padding: 10px;
+  cursor: pointer;
 }
 
 .search-filter-wrapper {

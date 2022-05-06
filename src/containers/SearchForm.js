@@ -23,14 +23,12 @@ const SearchForm = () => {
 
   return (
     <StyledSearchForm>
-      <div>
         <form onSubmit={handleSubmit}>
           <div>
             <i className="fa-solid fa-magnifying-glass"></i>
             <input id="search" className="text" type="text" value={country} onChange={handleChange} />
           </div>
         </form>
-      </div>
     </StyledSearchForm>
   )
 }
