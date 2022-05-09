@@ -17,9 +17,9 @@ const FilterForm = () => {
     <StyledFilterForm>
       <div>
           <form>
-            <select onChange={handleChange}>
+            <select className="input" onChange={handleChange}>
               {regions.map(region => (
-                <option key={region} value={region} placeholder="select a region">{region}</option>
+                <option className="input" key={region} value={region} placeholder="select a region">{region}</option>
               ))}
             </select>
         </form>

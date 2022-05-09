@@ -25,14 +25,13 @@ const CountriesList = () => {
 
   if (countries.status === 'succeeded' && country.data.length === 0 && regions.data.length == 0){
     return (
-        <StyledCountryList>
-          {countries.data.map(country => (
-            <li key={country.name}>
-              <CountryCard resource={country} />
-            </li>
-          ))}
-        </StyledCountryList>
-     
+      <StyledCountryList>
+        {countries.data.map(country => (
+          <li key={country.name}>
+            <CountryCard resource={country} />
+          </li>
+        ))}
+      </StyledCountryList>
   )}else if(regions.status === 'succeeded') {
     return (
         <StyledCountryList>

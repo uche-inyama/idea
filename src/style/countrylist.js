@@ -13,6 +13,7 @@ const StyledCountryList = styled.ul`
   }
 
   @media(min-width: 900px) {
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;

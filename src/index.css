@@ -47,13 +47,16 @@ table {
 }
 
 body {
-  /* background-color: red; */
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 98%);
   font-family: 'Nunito Sans', sans-serif;
 }
 
-#root {
-  /* height: 100%; */
+.input {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.search-filter-wrapper {
+  background-color: hsl(0, 0%, 98%);
 }
 
 .container {
@@ -61,14 +64,14 @@ body {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  top: 80px;
+  top: 70px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 12%;
+  height: 70px;
   background-color: #fff;
   font-size: 1rem;
   position: fixed;
