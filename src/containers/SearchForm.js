@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from "react-router-dom"
 import { fetchCountry } from '../redux/searchFormSlice';
@@ -25,9 +25,8 @@ const SearchForm = () => {
     <StyledSearchForm>
         <form onSubmit={handleSubmit}>
           <div>
-            {/* <i className="fa-solid fa-magnifying-glass"></i> */}
             <input id="search" className="input text" 
-              type="text" value={country} placeholder="search by country" onChange={handleChange} />
+              type="text" value={country} aria-label="search-input" placeholder="search by country" onChange={handleChange} />
           </div>
         </form>
     </StyledSearchForm>

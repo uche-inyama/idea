@@ -1,5 +1,4 @@
 import React from 'react'
-import StyledCard from '../style/countryCard';
 
 const CountryDetailCard = ({ resource, handleSubmit }) => {
   const { borders, languages, nativeName, currencies, subregion, topLevelDomain, name, flag, population, region, capital } = resource
@@ -28,7 +27,7 @@ const CountryDetailCard = ({ resource, handleSubmit }) => {
               <h5><span>Top Level Domain: </span>{topLevelDomain}</h5>
               <h5><span>Currency: </span>{currency}</h5>
               <h5><span>languages: </span> {
-                languages.map(language => <span className="language-list" key={language}>
+                languages.map(language => <span className="language-list" key={language.name}>
                 {language.name}
                 </span>
                 )}</h5>

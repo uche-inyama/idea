@@ -8,7 +8,7 @@ import { fetchCountry } from '../redux/searchFormSlice';
 
 const CountryDetail = () => {
   const country = useSelector(state => (state.country))
-  const {status, data, error } = country
+  const {status, data } = country
   let navigate = useNavigate()
   const dispatch = useDispatch()
   const { slug } = useParams()
@@ -26,12 +26,6 @@ const CountryDetail = () => {
   if(status === 'loading' || status === 'idle'){
     return (
       <div>loading...</div>
-    )
-  }
-
-  if(error){
-    return (
-      <div>{error}</div>
     )
   }
 

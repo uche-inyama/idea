@@ -11,11 +11,11 @@ const CountriesList = () => {
   const regions = useSelector(state => state.regions)
   const country = useSelector(state => state.country)
 
-  const { status, error, data } = countries
+  const { status } = countries
   
   useEffect(() => {
     if (!countries.length) dispatch(fetchCountries());
-  }, [dispatch, fetchCountries])
+  }, [dispatch, countries.length])
 
   if(status === 'loading' || status === 'idle'){
     return (
@@ -23,7 +23,7 @@ const CountriesList = () => {
     )
   }
 
-  if (countries.status === 'succeeded' && country.data.length === 0 && regions.data.length == 0){
+  if (countries.status === 'succeeded' && country.data.length === 0 && regions.data.length === 0){
     return (
       <StyledCountryList>
         {countries.data.map(country => (
