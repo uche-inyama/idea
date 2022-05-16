@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 import CountryDetail from './containers/CountryDetail';
 import Home from './containers/Home';
 import { changeMode } from './helper/mode'
@@ -19,21 +19,21 @@ const App = () => {
   
   return (
     <>
-      <div className="header">
-        <div className="header-title">Where in the world?</div>
-        <div onClick={handleChange}>
-          <i className="fa-solid fa-moon"></i>
-          <span className="mode">{mode}</span>
+      <Router>
+        <div className="header">
+          <div className="header-title">Where in the world?</div>
+          <div onClick={handleChange}>
+            <i className="fa-solid fa-moon"></i>
+            <span className="mode">{mode}</span>
+          </div>
         </div>
-      </div>
-      <div className="container bg-lm-light-gray">
-        <Router>
-          <Routes>
-            <Route exact path="/" element={<Home/>} />
-            <Route exact path="/:slug/details" element={<CountryDetail />}/>
-          </Routes>
-        </Router>
-      </div>
+        <div className="container bg-lm-light-gray">
+            <Routes>
+              <Route exact path="/" element={<Home/>} />
+              <Route exact path="/:slug/details" element={<CountryDetail />}/>
+            </Routes>
+        </div>
+      </Router>
     </>
   );
 }

@@ -1,6 +1,5 @@
 import { fireEvent, render } from "@testing-library/react";
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import store  from '../redux/store';
 import FilterForm from "./FilterForm";
 

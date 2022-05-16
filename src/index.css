@@ -102,6 +102,25 @@ body {
   z-index: 2; 
 }
 
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errors h4 {
+  padding: 30px;
+  margin-bottom: 10px;
+}
+
+.errors p {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.4;
+}
+
 @media(min-width: 900px) {
   .search-filter-wrapper {
     justify-content: space-between;

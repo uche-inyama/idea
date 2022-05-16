@@ -19,8 +19,10 @@ const setup = () => {
   }
 }
 
-test('', () => {
+test('searchForm', () => {
   const { input } = setup()
   fireEvent.change(input, {target: {value: 'Ghana'}})
   expect(input.value).toBe('Ghana')
 })
+
+// culture_map
