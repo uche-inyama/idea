@@ -19,9 +19,9 @@
 ### Setup
       Clone the repository on your local machine and cd into the directory where the file is saved.
 ### Installation
-      run npm install
+      yarn
 ### Usage
-      run npm run dev
+      yarn start
       
 ###  Authors
  - Github: [@githubhandle](https://github.com/uche-inyama)
