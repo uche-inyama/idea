@@ -17,7 +17,7 @@
 ### Prerequisites
      Node should be installed on the local machine.
 ### Setup
-      Clone the repository on your local machine and cd into the directory where the file is saved.
+      Clone the repository to your local machine and cd into the directory where the file is saved.
 ### Installation
       yarn
 ### Usage
