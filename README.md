@@ -19,9 +19,9 @@
 ### Setup
       Clone the repository to your local machine and cd into the directory where the file is saved.
 ### Installation
-      yarn
+      run: yarn
 ### Usage
-      yarn start
+      run: yarn start
       
 ###  Authors
  - Github: [@githubhandle](https://github.com/uche-inyama)
