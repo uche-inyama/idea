@@ -23,5 +23,9 @@
 ### Usage
       run: yarn start
       
-###  Authors
- - Github: [@githubhandle](https://github.com/uche-inyama)
+###  Authors 
+👤 **Inyama, Uchechukwu Henry**
+
+- Github: [@githubhandle](https://github.com/uche-inyama)
+- Twitter: [@twitterhandle](https://twitter.com/euuoc)
+- Linkedin: [linkedin](https://www.linkedin.com/in/uchechukwu-inyama-b3429a105/)
